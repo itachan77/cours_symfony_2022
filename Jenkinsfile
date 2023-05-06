@@ -10,7 +10,7 @@ pipeline {
 
     stage('test') {
       parallel {
-        stage('test') {
+        stage('test unitaire') {
           steps {
             sh 'php bin/phpunit tests/unit'
           }
